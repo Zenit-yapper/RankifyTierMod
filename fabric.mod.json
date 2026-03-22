@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "rankify-tier-mod",
+  "version": "${version}",
+  "name": "Rankify Tier Display",
+  "description": "Displays player tiers from rankify-tier-flow.base44.app above player heads",
+  "authors": ["Your Name"],
+  "contact": {
+    "homepage": "https://rankify-tier-flow.base44.app",
+    "sources": "https://github.com/yourusername/rankify-tier-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/rankify-tier-mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.rankify.client.RankifyClientEntrypoint"
+    ],
+    "main": [
+      "com.rankify.RankifyTierMod"
+    ]
+  },
+  "mixins": [
+    "rankify-tier-mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.10",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
